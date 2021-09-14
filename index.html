@@ -10,26 +10,30 @@
 </head>
 <body>
     <nav id="navbar">
-        <div class="nav-head">Aryan Arlikar</div>
+        <div class="nav-head"><a href="index.html">Aryan Arlikar</a></div>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="CV/CV.pdf" download="CV_2021">DownloadCV</a></li>
         </ul>
     </nav>
-
     <section id="home">
         <div class="sec-intro">
-            <span>Say Hello to a Programmer</span>
-            <div class="social-icon">
-                <i class="fa fa-linkedin"></i>
-                <i class="fa fa-github"></i>
-                <i class="fa fa-twitter"></i>
-            </div>
-            <button class="cv-btn">Download CV</button>
+            <b>Lets CODE!</b> <br>            
         </div>
-        <div class="sec-img">
-            <img src="image/android.ico">
+        <div class="sec-code">
+            <h1>
+                <a href="" class="typewrite" data-period="2000" data-type='[
+                "console.log(\"Hello World!\");"
+                ,"class HelloWorldApp {<br>public static void main(String[] args) {<br>System.out.println(\"Hello World!\");<br>}}"
+                ,"package main<br>import \"fmt\"<br>func main() {<br>fmt.Println(\"Hello, World\")<br>}"
+                ,"#include &#60 stdio.h ><br>int main(void)<br>{ printf(\"hello, world\");<br>}"
+                ,"#!/bin/bash<br>STR=\"Hello World!\"<br>echo $STR"
+                ,">>>print(\"Hello World\")<br>>>>Hello World"]'>
+                    <span class="wrap"></span>
+                </a>
+            </h1>
         </div>
     </section>
 
@@ -41,7 +45,13 @@
             <input type="number" placeholder="Phone">
             <button class="submit-btn" type="submit">Submit</button>
         </div>
+        <div class="social-icon">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+            <i class="fa fa-twitter"></i>
+        </div>        
     </section>
     <script src="JS/navbar.js"></script>
+    <script src="JS/code.js"></script>
 </body>
 </html>
