@@ -17,8 +17,6 @@ body::-webkit-scrollbar {
 
 /* Navigatio Bar*/
 
-
-
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -33,7 +31,7 @@ body::-webkit-scrollbar {
 }
 
 .nav-head a{
-    font-size: 30px;
+    font-size: 20px;
     color: aliceblue;
     text-decoration: none;
     padding-left: 30px;
@@ -47,7 +45,7 @@ body::-webkit-scrollbar {
 
 .menu a:hover{
     transition-duration: 700ms;
-    color: rgb(247, 152, 64);
+    color: #FDB750;
 }
 
 .menu li a{
@@ -62,36 +60,140 @@ body::-webkit-scrollbar {
 #home{
     height: 100vh;
     display: flex;
-    margin-top: 70px;
     background: url('../image/bg.jpg');
     background-size: cover;
-}
-
-
-.sec-intro{
-    color: aliceblue;
-    font-size: 50px;
-    font-weight: 600;
-    margin: 170px 200px;
-    font-family: 'Courier New', Courier, monospace;
+    background-position: center;
 }
 
 .sec-code{
+    justify-content: center;
+    align-items: center;
     margin: auto;
     margin-top: 150px;
 }
 
 .sec-code a{
-    color: #ddd;
+    color: aliceblue;
     text-decoration: none;
     font-size: 30px;
     font-family: monospace;
 }
 
+/* About */
+
+#about{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#about img{
+    padding: 5px;
+    height: 98vh;
+    width: 65vh;
+    align-items: left;
+}
+
+.about-txt{
+    font-size: 30px;
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.about-txt p{
+    color: aliceblue;
+    height: 71vh;
+    font-size: 24px;
+    text-align: justify;
+    padding: 40px;
+    overflow: hidden;
+}
+
+/* Skills*/
+#skill{
+    height: 100vh;
+    background-color: black;
+    color: aliceblue;
+    background: url('../image/temp4.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#skill h3{
+    font-size: 48px;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 0%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.program{
+    text-align: left;
+    padding: 100px;
+}
+
+.domain{
+    margin-right: 100px;
+    text-align: left;
+    padding: 100px;
+}
+
+.program h2, .domain h2{
+    padding: 30px;
+    padding-left: 0%;
+    padding-top: 0%;
+}
+
+.program li, .domain li{
+    padding: 20px;
+    font-size: 150%;
+}
+
+/*Work*/
+#work{
+    height: 101vh;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#work h3{
+    font-size: 40px;
+    padding: 80px;
+    text-align: center;
+}
+
+#work img{
+    padding: 4px;
+    width: 66vh;
+    height: 100vh;
+    align-content: space-around;
+    overflow: hidden;
+}
+
+.work-txt{
+    font-size: 150%;
+    padding: 50px;
+}
+
+.work-txt li{
+    padding: 20px;
+}
+
 /* Contact */
 #contact{
     height: 60vh;
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -106,7 +208,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .input-fields input{
@@ -139,6 +241,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     padding: 10px;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 .social-icon i{
@@ -147,35 +250,19 @@ body::-webkit-scrollbar {
     font-size: 32px;
 }
 
-/* For mobile View */
+.social-icon a{
+    text-decoration: none;
+    color: black;
+}
 
-@media screen and (max-width:480px)
-{
-    #home{
-        display: flex;
-        flex-wrap: wrap;
-    }
+.social-icon a:visited{
+    text-decoration: none;
+    color: black;
+}
 
-    .sec-intro{
-        margin-top: 50px;
-        font-size: 24px;
-    }
-
-    .cv-btn{
-        width: 200px;
-    }
-
-    .sec-img{
-        margin: 0 0 0 0;
-    }
-
-    .sec-img img{
-        width: 300px;
-        height: 300px;;
-    }
-
-    #navbar{
-        display: flex;
-        flex-wrap: wrap;
-    }
+/*footer*/
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
 }

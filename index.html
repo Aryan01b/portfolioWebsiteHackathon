@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +9,95 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <nav id="navbar">
-        <div class="nav-head"><a href="index.html">Aryan Arlikar</a></div>
+        <div class="nav-head"><a href="index.html"><b>Aryan Arlikar</b></a></div>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="CV/CV.pdf" download="CV_2021">DownloadCV</a></li>
         </ul>
     </nav>
     <section id="home">
-        <div class="sec-intro">
-            <b>Lets CODE!</b> <br>            
-        </div>
         <div class="sec-code">
             <h1>
-                <a href="" class="typewrite" data-period="2000" data-type='[
+                <a href="" class="typewrite" data-period="1000" data-type='[
                 "console.log(\"Hello World!\");"
+                ,">>>print(\"Hello World\")<br>>>>Hello World"
                 ,"class HelloWorldApp {<br>public static void main(String[] args) {<br>System.out.println(\"Hello World!\");<br>}}"
                 ,"package main<br>import \"fmt\"<br>func main() {<br>fmt.Println(\"Hello, World\")<br>}"
                 ,"#include &#60 stdio.h ><br>int main(void)<br>{ printf(\"hello, world\");<br>}"
                 ,"#!/bin/bash<br>STR=\"Hello World!\"<br>echo $STR"
-                ,">>>print(\"Hello World\")<br>>>>Hello World"]'>
+                ]'>
                     <span class="wrap"></span>
                 </a>
             </h1>
         </div>
+    </section>
+
+    <section id="about">
+        <img src="image/bg-img3.jpg">
+        <div class="about-txt">
+            <h3>"About Us</h3>
+            <p>
+                <br><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.</i>
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua.
+                Auctor urna nunc id cursus. Dignissim enim sit amet venenatis urna cursus eget nunc scelerisque. Cursus
+                metus aliquam eleifend mi.
+                Sed faucibus turpis in eu mi bibendum neque. Auctor neque vitae tempus quam pellentesque nec.
+                <br>In <i><b>vitae turpis massa sed elementum</b></i> tempus egestas sed. Netus et malesuada fames ac
+                turpis egestas. Praesent semper feugiat nibh sed pulvinar proin gravida.
+                Volutpat sed cras ornare arcu dui vivamus. Elit pellentesque habitant morbi tristique senectus et netus.
+                Id volutpat lacus laoreet non curabitur.
+                Venenatis urna cursus eget nunc scelerisque.
+            </p>
+        </div>
+    </section>
+
+    <section id="skill">
+        <h3>My Arsenal</h3>
+        <div class="container">
+            <div class="program">
+                <h2>languages</h2>
+                <ul>
+                    <li>c/c++</li>
+                    <li>Python</li>
+                    <li>Html/CSS/JS</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+            <div class="domain">
+                <h2>Domain</h2>
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>Data Science</li>
+                    <li>Web Developement</li>
+                    <li>Artificial Intelligence</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="work-txt">
+            <h3>Some Of my Work...</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</li>
+                <li>Fringilla phasellus faucibus scelerisque eleifend donec pretium.</li>
+                <li>Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar.</li>
+                <li>Et pharetra pharetra massa massa ultricies mi quis.</li>
+                <li>Id leo in vitae rhoncus aenean vel elit scelerisque m turpis massa.</li>
+            </ul>
+        </div>
+        <img src="image/bg-img2.jpg">
     </section>
 
     <section id="contact">
@@ -43,15 +106,18 @@
             <input type="text" placeholder="Name">
             <input type="email" placeholder="Email">
             <input type="number" placeholder="Phone">
-            <button class="submit-btn" type="submit">Submit</button>
+            <button class="submit-btn" type="submit" onclick=fun() >Submit</button>
         </div>
         <div class="social-icon">
-            <i class="fa fa-linkedin"></i>
-            <i class="fa fa-github"></i>
-            <i class="fa fa-twitter"></i>
-        </div>        
+            <a href="https://in.linkedin.com/" target="parent"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/" target="parent"><i class="fa fa-github"></i></a>
+            <a href="https://twitter.com/?lang=en-in" target="parent"><i class="fa fa-twitter"></i></a>
+        </div>
     </section>
+    <section id="footer"></section>
     <script src="JS/navbar.js"></script>
     <script src="JS/code.js"></script>
+    <script src="JS/contact.js"></script>
 </body>
+
 </html>
